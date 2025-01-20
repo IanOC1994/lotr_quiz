@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+   <!-- Meta tags for search engine -->
+   <meta name="description" content="Lord of the Rings Quiz. A quiz of lotr trivia questions.">
+   <meta name="keywords" content="lord of the rings, lotr, quiz, trivia, tolkien, middle earth">
+  <!-- Page Title -->
+  <title>Lord of the Rings Quiz</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+  <!-- Stylesheet-->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="assets/images/lotr logo.png" alt="lord of the rings logo" class="logo">
+      <h1>The Quiz</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="quiz-container">
+      <div class="question-card">
+        <p id="question">Question will appear here</p>
+        <div id="choices" class="choices-container">
+          <button>Option A</button>
+          <button>Option B</button>
+          <button>Option C</button>
+          <button>Option D</button>
+        </div>
+      </div>
+      <button>Next Question</button>
+      <p id="score">Score: 0</p>
+    </div>
+  </main>
+
+   <!-- Font Awesome Kit -->
+   <script src="https://kit.fontawesome.com/2178b43ba9.js" crossorigin="anonymous"></script>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+ 
 </body>
 </html>
