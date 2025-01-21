@@ -1,6 +1,6 @@
 .header-container {
     position: relative;
-    background-color: #333;
+    background-color: #4f3b3b;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -8,7 +8,7 @@
 }
 
 .logo {
-    max-height: 150px;
+    max-height: 120px;
     object-fit: cover;
     padding: 20px;
 }
@@ -16,10 +16,10 @@
 .header-text {
     position: fixed;
     left: 56%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -112%);
     color: #fff;
     font-family: 'Cinzel', serif;
-    font-size: 35px;
+    font-size: 25px;
     text-shadow: 2px 2px 4px #000000;
     padding: 10px;
 }
@@ -42,10 +42,10 @@ body {
 }
 
 .question-card {
-    background-color: #6a7c87;
+    background-color: #af978e;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .choices-container {
