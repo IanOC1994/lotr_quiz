@@ -1,3 +1,7 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+/* Header Styles */
 .header-container {
     position: relative;
     background-color: #4f3b3b;
@@ -17,15 +21,16 @@
     position: absolute;
     left: 56%;
     transform: translate(-50%, -112%);
-    color: #fff;
-    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    font-family: 'Cinzel Decorative', sans-serif;
     font-size: 25px;
     text-shadow: 2px 2px 4px #000000;
     padding: 10px;
 }
 
+/* Main Body Styles */
 body {
-    font-family: 'Cinzel', sans-serif;
+    font-family: 'Cinzel Decorative', sans-serif;
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,6 +44,7 @@ body {
     max-width: 600px;
     margin: 50px auto;
     text-align: center;
+    /* Used rgba so that opacity only applied to background rather than entire quiz container */
     background-color: rgba(0,0,0,0.6);
     padding: 5px;
     border-radius: 15px;
@@ -58,7 +64,7 @@ body {
 }
 
 button {
-    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel Decorative', sans-serif;
     background-color: #4f3b3b;
     color: #ffffff;
     padding: 10px;
@@ -76,11 +82,11 @@ button.choice {
     cursor: pointer;
   }
   
-  button.choice:hover {
+button.choice:hover {
     background-color: #7a8a96;
   }
   
-  button#next-btn {
+button#next-btn {
     background-color: #4b6c4f;
     padding: 12px 30px;
     font-size: 20px;
@@ -88,14 +94,15 @@ button.choice {
     border-radius: 8px;
   }
   
-  #score {
+#score {
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
     color: #ffffff;
   }
 
-  @media screen and (max-width: 767px) {
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
     .choices-container {
       display: flex;
       flex-direction: column;
@@ -104,5 +111,4 @@ button.choice {
     .quiz-container {
         margin: 20px;
     }
-    
   }
