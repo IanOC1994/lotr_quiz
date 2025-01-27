@@ -74,8 +74,6 @@ function displayQuestion() {
     button.onclick = () => checkAnswer(choice);
     choicesContainer.appendChild(button);
   });
-
-  nextButton.style.display = "none"; // Hide the Next button initially
 }
 
 // Function to check the selected answer
@@ -97,8 +95,6 @@ function checkAnswer(selectedAnswer) {
     score++;
     scoreElement.textContent = `Score: ${score}`;
   }
-
-  nextButton.style.display = "block"; // Show the Next button
 }
 
 // Function to go to the next question
