@@ -29,15 +29,15 @@
   <main>
     <div class="quiz-container">
       <div class="question-card">
-        <p id="question">Question will appear here</p>
+        <p id="question">What is the name of the actor who plays Aragorn in the movies?</p>
         <div id="choices" class="choices-container">
-          <button>Option A</button>
-          <button>Option B</button>
-          <button>Option C</button>
-          <button>Option D</button>
+          <button class="choice" onclick="checkAnswer('Viggo Mortensen')">Viggo Mortensen</button>
+          <button class="choice" onclick="checkAnswer('Orlando Bloom')">Orlando Bloom</button>
+          <button class="choice" onclick="checkAnswer('Sean Bean')">Sean Bean</button>
+          <button class="choice" onclick="checkAnswer('Ian McKellen')">Ian McKellen</button>
         </div>
       </div>
-      <button>Next Question</button>
+      <button id="next-btn" onclick="nextQuestion()">Next Question</button>
       <p id="score">Score: 0</p>
     </div>
   </main>
@@ -46,7 +46,7 @@
    <script src="https://kit.fontawesome.com/2178b43ba9.js" crossorigin="anonymous"></script>
 
   <!-- Link to JavaScript -->
-  <script src="script.js"></script>
+  <script src="assets/javascript/script.js"></script>
  
 </body>
 </html>
