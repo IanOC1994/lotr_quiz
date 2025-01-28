@@ -67,12 +67,14 @@ function displayQuestion() {
   choicesContainer.innerHTML = "";
 
   // Generate choice buttons dynamically
+  const choiceButtons = [];
   currentQuestion.choices.forEach((choice) => {
     const button = document.createElement("button");
     button.textContent = choice;
     button.classList.add("choice");
     button.onclick = () => checkAnswer(choice);
     choicesContainer.appendChild(button);
+    choiceButtons.push(button);
   });
 }
 
