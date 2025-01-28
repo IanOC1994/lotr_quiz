@@ -136,6 +136,50 @@ function endQuiz() {
     "afterend",
     `<p class='final-score'>Your final score is ${score} out of ${questions.length}!</p>`
   );
+
+  // Hide the Next button
+  nextButton.style.display = "none";
+
+  // Create the "Try Again" button
+  const tryAgainButton = document.createElement("button");
+  tryAgainButton.textContent = "Try Again";
+  tryAgainButton.classList.add("try-again-btn");
+  tryAgainButton.onclick = resetQuiz;
+
+  // Append the "Try Again" button to the quiz container
+  document.querySelector(".quiz-container").appendChild(tryAgainButton);
+}
+
+function resetQuiz() {
+  // Reset quiz variables
+  currentQuestionIndex = 0;
+  score = 0;
+
+  // Reset UI elements
+  scoreElement.textContent = `Score: ${score}`;
+  feedbackElement.textContent = "";
+  questionElement.textContent = "";
+  choicesContainer.innerHTML = "";
+
+  // Ensure the Next button is visible and enabled
+  nextButton.style.display = "block";
+  nextButton.style.margin = "0 auto";
+  nextButton.disabled = false;
+
+  // Remove the "Try Again" button
+  const tryAgainButton = document.querySelector(".try-again-btn");
+  if (tryAgainButton) {
+    tryAgainButton.remove();
+  }
+
+  // remove the final score
+  const finalScore = document.querySelector(".final-score");
+  if (finalScore) {
+    finalScore.remove();
+  }
+
+  // Restart the quiz
+  displayQuestion();
 }
 
 // Initialize the quiz
