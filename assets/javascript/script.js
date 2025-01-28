@@ -79,6 +79,8 @@ function displayQuestion() {
 // Feedback for the user
 const feedbackElement = document.createElement("p");
 feedbackElement.id = "feedback";
+feedbackElement.style.fontWeight = "bold";
+feedbackElement.style.marginTop = "10px";
 document.querySelector(".quiz-container").appendChild(feedbackElement);
 
 // Function to check the selected answer
@@ -95,6 +97,7 @@ function checkAnswer(selectedAnswer) {
     feedbackElement.style.color = "red";
   }
 
+
   // Update the score display immediately
   scoreElement.textContent = `Score: ${score}`;
 
@@ -109,9 +112,13 @@ function checkAnswer(selectedAnswer) {
   });
 }
 
+
 // Function to go to the next question
 function nextQuestion() {
   currentQuestionIndex++;
+
+  // Clear feedback and hide the Next button
+  feedbackElement.textContent = "";
 
   if (currentQuestionIndex < questions.length) {
     displayQuestion();
