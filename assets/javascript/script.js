@@ -64,7 +64,7 @@ const scoreElement = document.getElementById("score");
 function displayQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
-  choicesContainer.innerHTML = ""; // Clear previous choices
+  choicesContainer.innerHTML = "";
 
   // Generate choice buttons dynamically
   currentQuestion.choices.forEach((choice) => {
@@ -76,25 +76,37 @@ function displayQuestion() {
   });
 }
 
+// Feedback for the user
+const feedbackElement = document.createElement("p");
+feedbackElement.id = "feedback";
+document.querySelector(".quiz-container").appendChild(feedbackElement);
+
 // Function to check the selected answer
 function checkAnswer(selectedAnswer) {
   const currentQuestion = questions[currentQuestionIndex];
-  const choiceButtons = document.querySelectorAll(".choice");
+  const correctAnswer = currentQuestion.correctAnswer;
+
+  if (selectedAnswer === correctAnswer) {
+    score++; // Increment the score
+    feedbackElement.textContent = "Correct!";
+    feedbackElement.style.color = "green";
+  } else {
+    feedbackElement.textContent = `Incorrect! The correct answer is: ${correctAnswer}`;
+    feedbackElement.style.color = "red";
+  }
+
+  // Update the score display immediately
+  scoreElement.textContent = `Score: ${score}`;
 
   // Disable all buttons after an answer is clicked
   choiceButtons.forEach((button) => {
     button.disabled = true;
     if (button.textContent === currentQuestion.correctAnswer) {
-      button.classList.add("correct"); // Highlight correct answer
+      button.classList.add("correct");
     } else {
-      button.classList.add("incorrect"); // Highlight incorrect answers
+      button.classList.add("incorrect");
     }
   });
-
-  if (selectedAnswer === currentQuestion.correctAnswer) {
-    score++;
-    scoreElement.textContent = `Score: ${score}`;
-  }
 }
 
 // Function to go to the next question
