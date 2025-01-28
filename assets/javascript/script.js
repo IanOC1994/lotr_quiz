@@ -97,7 +97,6 @@ function checkAnswer(selectedAnswer) {
     feedbackElement.style.color = "red";
   }
 
-
   // Update the score display immediately
   scoreElement.textContent = `Score: ${score}`;
 
@@ -111,7 +110,6 @@ function checkAnswer(selectedAnswer) {
     }
   });
 }
-
 
 // Function to go to the next question
 function nextQuestion() {
