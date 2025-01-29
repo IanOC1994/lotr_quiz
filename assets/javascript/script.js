@@ -94,7 +94,7 @@ function checkAnswer(selectedAnswer) {
   const correctAnswer = currentQuestion.correctAnswer;
 
   if (selectedAnswer === correctAnswer) {
-    score++; // Increment the score
+    score++;
     feedbackElement.textContent = "Correct!";
     feedbackElement.style.color = "green";
   } else {
@@ -135,23 +135,32 @@ function nextQuestion() {
   }
 }
 
-// End of the quiz
+// Function to handle the end of the quiz, display the final score, and provide an option to restart the quiz
 function endQuiz() {
+  displayCompletionMessage();
+  hideNextButton();
+  displayFinalScore();
+  questionElement.innerHTML += `<p class='final-score'>Your final score is ${score} out of ${questions.length}!</p>`;
   questionElement.textContent = "Quiz Completed!";
   choicesContainer.innerHTML = "";
+}
+
+function hideNextButton() {
   nextButton.style.display = "none";
+}
+
+function displayFinalScore() {
   questionElement.insertAdjacentHTML(
     "afterend",
     `<p class='final-score'>Your final score is ${score} out of ${questions.length}!</p>`
   );
+}
 
-  // "Try Again" button
+function createTryAgainButton() {
   const tryAgainButton = document.createElement("button");
   tryAgainButton.textContent = "Try Again";
   tryAgainButton.classList.add("try-again-btn");
   tryAgainButton.onclick = resetQuiz;
-
-  // Append the "Try Again" button to the quiz container
   document.querySelector(".quiz-container").appendChild(tryAgainButton);
 }
 
@@ -166,7 +175,7 @@ function resetQuiz() {
   questionElement.textContent = "";
   choicesContainer.innerHTML = "";
 
-  // Ensure the Next button is visible and enabled
+  // Next button visible and enabled
   nextButton.style.display = "block";
   nextButton.style.margin = "0 auto";
   nextButton.disabled = false;
