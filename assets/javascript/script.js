@@ -7,7 +7,7 @@ const questions = [
     {
         question: 'Which character says the famous line, "One does not simply walk into Mordor"?',
         choices: ["Gandalf", "Aragorn", "Boromir", "Legolas"],
-        correctAnswer: "Gandalf",
+        correctAnswer: "Boromir",
     },
     {
         question: "What is the name of the elven city where Frodo and the Fellowship are first gathered?",
@@ -60,6 +60,9 @@ const choicesContainer = document.getElementById("choices");
 const nextButton = document.getElementById("next-btn");
 const scoreElement = document.getElementById("score");
 
+// Array to store choice buttons
+let choiceButtons = [];
+
 // Function to display a question
 function displayQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
@@ -67,7 +70,7 @@ function displayQuestion() {
   choicesContainer.innerHTML = "";
 
   // Generate choice buttons dynamically
-  const choiceButtons = [];
+  choiceButtons = [];
   currentQuestion.choices.forEach((choice) => {
     const button = document.createElement("button");
     button.textContent = choice;
@@ -95,39 +98,44 @@ function checkAnswer(selectedAnswer) {
     feedbackElement.textContent = "Correct!";
     feedbackElement.style.color = "green";
   } else {
-    feedbackElement.textContent = `Incorrect! The correct answer is: ${correctAnswer}`;
+    feedbackElement.textContent = `Incorrect! The correct answer was: ${correctAnswer}`;
     feedbackElement.style.color = "red";
   }
+
+  // Disable only the answer buttons after selection
+  choiceButtons.forEach((button) => {
+    button.disabled = true;
+  });
 
   // Update the score display immediately
   scoreElement.textContent = `Score: ${score}`;
 
-  // Disable all buttons after an answer is clicked
   choiceButtons.forEach((button) => {
-    button.disabled = true;
     if (button.textContent === currentQuestion.correctAnswer) {
       button.classList.add("correct");
     } else {
       button.classList.add("incorrect");
     }
   });
+
+  // Make sure "Next Question" button remains enabled
+  nextButton.disabled = false;
 }
 
-// Function to go to the next question
 function nextQuestion() {
   currentQuestionIndex++;
 
-  // Clear feedback and hide the Next button
-  feedbackElement.textContent = "";
-
   if (currentQuestionIndex < questions.length) {
+    feedbackElement.textContent = "";
+    // Initialize the quiz
     displayQuestion();
+    nextButton.disabled = true;
   } else {
     endQuiz();
   }
 }
 
-// Function to handle the end of the quiz
+// End of the quiz
 function endQuiz() {
   questionElement.textContent = "Quiz Completed!";
   choicesContainer.innerHTML = "";
@@ -137,10 +145,7 @@ function endQuiz() {
     `<p class='final-score'>Your final score is ${score} out of ${questions.length}!</p>`
   );
 
-  // Hide the Next button
-  nextButton.style.display = "none";
-
-  // Create the "Try Again" button
+  // "Try Again" button
   const tryAgainButton = document.createElement("button");
   tryAgainButton.textContent = "Try Again";
   tryAgainButton.classList.add("try-again-btn");
@@ -166,7 +171,7 @@ function resetQuiz() {
   nextButton.style.margin = "0 auto";
   nextButton.disabled = false;
 
-  // Remove the "Try Again" button
+  nextButton.classList.add("centered-button");
   const tryAgainButton = document.querySelector(".try-again-btn");
   if (tryAgainButton) {
     tryAgainButton.remove();
