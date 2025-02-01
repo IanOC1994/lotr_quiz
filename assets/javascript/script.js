@@ -137,23 +137,24 @@ function nextQuestion() {
 
 // Function to handle the end of the quiz, display the final score, and provide an option to restart the quiz
 function endQuiz() {
-  displayCompletionMessage();
-  hideNextButton();
-  displayFinalScore();
-  questionElement.innerHTML += `<p class='final-score'>Your final score is ${score} out of ${questions.length}!</p>`;
-  questionElement.textContent = "Quiz Completed!";
   choicesContainer.innerHTML = "";
-}
+  feedbackElement.style.display = "none"; // Hide feedback on quiz end
+  
+  // Update the question element to indicate the quiz is completed
+  questionElement.textContent = "Quiz Completed!";
+  
+  // Append the final score to the question element
+  const finalScore = document.createElement("p");
+  finalScore.classList.add("final-score");
+  finalScore.textContent = `Final Score: ${score} out of ${questions.length}`;
+  questionElement.appendChild(finalScore);
 
-function hideNextButton() {
+  // Hide score element and next button
+  scoreElement.style.display = "none";
   nextButton.style.display = "none";
-}
 
-function displayFinalScore() {
-  questionElement.insertAdjacentHTML(
-    "afterend",
-    `<p class='final-score'>Your final score is ${score} out of ${questions.length}!</p>`
-  );
+  // Create and add the try again button
+  createTryAgainButton();
 }
 
 function createTryAgainButton() {
@@ -169,16 +170,17 @@ function resetQuiz() {
   currentQuestionIndex = 0;
   score = 0;
 
+  // Show score element and next button again
+  scoreElement.style.display = "block";
+  nextButton.style.display = "block";
+  nextButton.style.margin = "0 auto";
+  feedbackElement.style.display = "block"; // Show feedback element again
+
   // Reset UI elements
   scoreElement.textContent = `Score: ${score}`;
   feedbackElement.textContent = "";
   questionElement.textContent = "";
   choicesContainer.innerHTML = "";
-
-  // Next button visible and enabled
-  nextButton.style.display = "block";
-  nextButton.style.margin = "0 auto";
-  nextButton.disabled = false;
 
   nextButton.classList.add("centered-button");
   const tryAgainButton = document.querySelector(".try-again-btn");
