@@ -1,9 +1,9 @@
 ## Lord of the Rings Quiz
 
-![screenshot of Home page]()
+![screenshot of Home page](assets/documentation/responsiveness/responsive-image.png)
 
 
-[View our live project](https://ianoc1994.github.io/lotr_quiz/)
+[View my live project](https://ianoc1994.github.io/lotr_quiz/)
 
 ---
 
@@ -39,6 +39,17 @@
 
 ### **Criteria**  
 
+1. Purpose & Focus
+The quiz must first and formost be fun. It should focus on the topic of the Lord of the Rings and more specifically questions relating to the movie trilogy.
+
+2. Accessibility and Usability
+The website must be intuitive and user-friendly. Content and features should be accessible on both desktop and mobile devices. Transitions from question to question should be smooth and provide a seamless user experience.
+
+3. Feedback Feature
+The quiz should provide feedback to the user in the form of a correct or incorrect message after each question.
+
+4. Try Again Feature
+The quiz should end with a screen that presents you with a final score message and the option to try again. This will present in the form of a button which, upon clicking, will redirect the user back to the home page. 
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -48,10 +59,24 @@
 
 ### Primary Goal
 
+The primary goal of this site is to provide a fun, friendly quiz that serves as a source of entertainment to the user. It should also provide fans of Lord of the Rings books and movies with the oppurtunity to test there knowledge. 
+
 ### **First Time Users**
+
+- First time users will be met with an accessible and user-friendly environment to test there knowledge on the topic of the Lord of the Rings.
+
+- First time users will notice a theme reminiscint of the movies with similar colour schemes and iconography that was used.
+
+- First time users will be provided with feedback at the end of each question as to whether they were correct or incorrect.
+
+- First time users will be provided with a score counter which will update after each question provided the user gets the answer right.
+
+First time users will be given the oppurtunity to try the quiz again at the end. This will redirect the user back to the start of the quiz. 
 
 
 ### **Returning Users** 
+
+- Returning users will find the same user-friendly interface.
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -60,6 +85,55 @@
 
 ## User Stories
 
+<details>
+<summary>User Stories</summary> 
+
+### User Story: create wireframes
+**Label:** Must Have
+
+---
+
+### User Story: Content Creation
+**Label:** Must Have
+
+---
+
+### User Story: Images & Logos
+**Label:** Must Have
+
+---
+
+### User Story: Favicons and title
+**Label:** Must Have
+
+---
+
+### User Story: Try Again Function
+**Label:** Should have
+
+---
+
+### User Story: User Feedback
+**Label:** Should have
+
+---
+
+### User Story: Character images upon correct answer input
+**Label:** Enhancement
+
+---
+
+### User Story: difficulty levels
+**Label:** Enhancement
+
+---
+
+### User Story: User Profile with score retention
+**Label:** Enhancement
+
+---
+
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -67,12 +141,41 @@
 
 # Wireframes
 
-<details>
-<summary>Wireframe - Mobile - Desktop home page </summary>  
+<details open>
+<summary>Wireframe - Mobile - Home Page & Quiz </summary>  
 
-![wireframe - Mobile - Desktop home page]()
+![wireframe - Mobile - Home Page & Quiz](assets/documentation/wireframes/lotr-quiz-mobile.png)
 </details> 
 
+<details>
+<summary>Wireframe - Mobile - Quiz End & Try Again </summary>  
+
+![wireframe - Mobile - Home Page & Quiz](assets/documentation/wireframes/lotr-quiz-mobile-try-again.png)
+</details> 
+
+<details>
+<summary>Wireframe - Tablet - Home Page & Quiz </summary>  
+
+![wireframe - Tablet - Home Page & Quiz](assets/documentation/wireframes/lotr-quiz-tablet.png)
+</details> 
+
+<details>
+<summary>Wireframe - Tablet - Quiz End & Try Again </summary>  
+
+![wireframe - Tablet - Home Page & Quiz](assets/documentation/wireframes/lotr-quiz-tablet-try-again.png)
+</details> 
+
+<details>
+<summary>Wireframe - Laptop - Home Page & Quiz </summary>  
+
+![wireframe - Laptop - Home Page & Quiz](assets/documentation/wireframes/lotr-quiz-laptop.png)
+</details> 
+
+<details>
+<summary>Wireframe - Laptop - Quiz End & Try Again </summary>  
+
+![wireframe - Laptop - Home Page & Quiz](assets/documentation/wireframes/lotr-quiz-laptop-try-again.png)
+</details> 
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -82,7 +185,7 @@
 
   # Colour Scheme
 
-  ![colours]()
+  ![colours](assets/documentation/colorkit.png)
 
   # Typography
 
