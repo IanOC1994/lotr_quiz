@@ -20,15 +20,9 @@
   * [Desktop View](#Desktop-view)
   * [Tablet View](#tablet-view)
   * [Mobile View](#mobile-view)
-* [Goal](#goal)
-* [Problem Statement](#problem-statement)
-* [Target Audience](#target-audience)
-* [Benefits](#Benefits)
-* [Submission](#submission)
 * [Deployment](#deployment)
 * [Future Features](#future-features)
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
+* [Languages Used](#languages-used)
 * [Testing](#testing)
   * [HTML Validation using W3C Validation](#html-validation-using-w3c-validation)
   * [CSS Validation using W3C Validation](#css-validation-using-w3c-validation)
@@ -195,11 +189,11 @@ The primary goal of this site is to provide a fun, friendly quiz that serves as 
 
 # Design
 
-  # Colour Scheme
+  ## Colour Scheme
 
   ![colours](assets/documentation/colorkit.png)
 
-  # Typography
+  ## Typography
 
   [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative)
 
