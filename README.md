@@ -108,6 +108,11 @@ First time users will be given the oppurtunity to try the quiz again at the end.
 
 ---
 
+### User Story: Next Question Button
+**Label:** Must Have
+
+---
+
 ### User Story: Try Again Function
 **Label:** Should have
 
@@ -189,24 +194,42 @@ First time users will be given the oppurtunity to try the quiz again at the end.
 
   # Typography
 
+  [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative)
+
 [Back to Table of Contents](#table-of-contents)
 
 ---
 
 # Features
 
-### Desktop View
+## Desktop View
 
-![Desktop]()
+![Desktop view of the quiz](assets/documentation/features/laptop-view.png)
 
 ### Tablet View
 
-![Tablet]()
+![tablet](assets/documentation/features/tablet-view.png)
 
 
 ### Mobile View
 
-![mobile]()
+![mobile](assets/documentation/features/mobile-view.png)
+
+### Header
+
+![header](assets/documentation/features/header.png)
+
+### Quiz Container
+
+![quiz container](assets/documentation/features/quiz-container.png)
+
+### Feedback & Score Counter
+
+![feedback & score counter](assets/documentation/features/feedback-and-score-counter.png)
+
+### Quiz End & Try Again Feature
+
+![quiz end and try again feature](assets/documentation/features/quiz-end-and-try-again.png)
 
 
 [Back to Table of Contents](#table-of-contents)
