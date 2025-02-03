@@ -215,9 +215,17 @@ First time users will be given the oppurtunity to try the quiz again at the end.
 
 ![mobile](assets/documentation/features/mobile-view.png)
 
+### Favicon
+
+![favicon](assets/documentation/features/favicon.png)
+
 ### Header
 
 ![header](assets/documentation/features/header.png)
+
+### Background
+
+![background](assets/images/background.jpg)
 
 ### Quiz Container
 
@@ -303,9 +311,20 @@ The following features are some of the elements I would like to implement outsid
 
 ### 1. **Difficulty levels**  
 
-In a future version of this quiz I would like to introduce levels ...
+In a future version of this quiz I would like to introduce different levels to allow users to access a variety of different questions at differing difficulty.
+
+### 2. **Question Randomiser**
+
+In a future version of this quiz I would like to introduce a larger number of questions which would allow the quiz to randomise each time the try again button was selected. This would make the quiz more fun and allow users to have a different experience each time they return to the quiz.
  
- 
+### 3. **User Profile** 
+
+In a future version of this quiz I would like to implement a feature that allows users to set up gamer profiles which will keep track of their scores.
+
+### 4. **Score Table** 
+
+In a future version of this quiz I would like to implement a user score table which would allow the user to compete against other users. 
+
 
  [Back to Table of Contents](#table-of-contents)
 
