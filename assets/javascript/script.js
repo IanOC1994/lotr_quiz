@@ -59,9 +59,18 @@ const questionElement = document.getElementById("question");
 const choicesContainer = document.getElementById("choices");
 const nextButton = document.getElementById("next-btn");
 const scoreElement = document.getElementById("score");
+const feedbackElement = document.createElement("p");
 
 // Array to store choice buttons
 let choiceButtons = [];
+
+// Feedback for the user
+function setupFeedback() {
+  feedbackElement.id = "feedback";
+  feedbackElement.style.fontWeight = "bold";
+  feedbackElement.style.marginTop = "10px";
+  document.querySelector(".quiz-container").appendChild(feedbackElement);
+}
 
 // Function to display a question
 function displayQuestion() {
@@ -80,13 +89,6 @@ function displayQuestion() {
     choiceButtons.push(button);
   });
 }
-
-// Feedback for the user
-const feedbackElement = document.createElement("p");
-feedbackElement.id = "feedback";
-feedbackElement.style.fontWeight = "bold";
-feedbackElement.style.marginTop = "10px";
-document.querySelector(".quiz-container").appendChild(feedbackElement);
 
 // Function to check the selected answer
 function checkAnswer(selectedAnswer) {
@@ -197,6 +199,8 @@ function resetQuiz() {
   // Restart the quiz
   displayQuestion();
 }
+
+setupFeedback();
 
 // Initialize the quiz
 displayQuestion();
