@@ -58,6 +58,7 @@ let score = 0;
 const questionElement = document.getElementById("question");
 const choicesContainer = document.getElementById("choices");
 const nextButton = document.getElementById("next-btn");
+nextButton.onclick = nextQuestion;
 const scoreElement = document.getElementById("score");
 const feedbackElement = document.createElement("p");
 

@@ -1,4 +1,4 @@
-## Lord of the Rings Quiz
+# Lord of the Rings Quiz
 
 ![screenshot of Home page](assets/documentation/responsiveness/responsive-image.png)
 
@@ -6,7 +6,6 @@
 [View my live project](https://ianoc1994.github.io/lotr_quiz/)
 
 ---
-
 
 ## Table of Contents
 
@@ -71,7 +70,7 @@ The primary goal of this site is to provide a fun, friendly quiz that serves as 
 
 - First time users will be provided with a score counter which will update after each question provided the user gets the answer right.
 
-First time users will be given the oppurtunity to try the quiz again at the end. This will redirect the user back to the start of the quiz. 
+- First time users will be given the oppurtunity to try the quiz again at the end. This will redirect the user back to the start of the quiz. 
 
 
 ### **Returning Users** 
@@ -347,11 +346,11 @@ In a future version of this quiz I would like to implement a user score table wh
 
 ### index.html
 
-![index.html validation]()
+![index.html validation](assets/documentation/validation/html-validation.png)
 
 ## CSS Validation
 
-![style.css validation]()
+![style.css validation](assets/documentation/validation/css-validation.png)
 
 ## JS Validation
 
