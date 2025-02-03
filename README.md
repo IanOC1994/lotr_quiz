@@ -133,7 +133,7 @@ First time users will be given the oppurtunity to try the quiz again at the end.
 
 ---
 
-
+</details>
 
 [Back to Table of Contents](#table-of-contents)
 
