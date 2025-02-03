@@ -112,6 +112,11 @@ The primary goal of this site is to provide a fun, friendly quiz that serves as 
 
 ---
 
+### User Story: README.md
+**Label:** Must Have
+
+---
+
 ### User Story: Try Again Function
 **Label:** Should have
 
@@ -136,6 +141,9 @@ The primary goal of this site is to provide a fun, friendly quiz that serves as 
 **Label:** Enhancement
 
 ---
+
+### Projectboard
+![Projectboard](assets/documentation/features/projectboard.png)
 
 </details>
 
@@ -243,24 +251,6 @@ The primary goal of this site is to provide a fun, friendly quiz that serves as 
 
 ---
 
-# **Goal**   
-
-### Key Goals:
-
-1. **Functionality and Design**:  
-   
-
- 
-## Objective(s)  
- 
-
-## Target Audience  
-  
-
-[Back to Table of Contents](#table-of-contents)
-
----
-
 # Deployment
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
@@ -356,7 +346,7 @@ In a future version of this quiz I would like to implement a user score table wh
 
 ### script.js
 
-![script.js validation]()
+![script.js validation](assets/documentation/validation/js-validation.png)
 
 ## Lighthouse 
 
@@ -371,9 +361,26 @@ In a future version of this quiz I would like to implement a user score table wh
 
 ---
 
-# **🌟 Credits** 
+# **🌟 Credits**
+
+### Content
 
 - ChatGPT for genarating questions and answers for the site.
+- README.md layout. Credit to Sarah Darlington.
+- HTML & CSS layout and screen adaptability. Credit to [Kevin Powell](https://www.youtube.com/watch?v=3elGSZSWTbM&list=PL4-IK0AVhVjNMUcnzWixthjBKlOMgh-q4).
+- JavaScript basic quiz structure. Credit  to [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=78s).
+
+### Media
+
+- [Pexels](https://www.pexels.com/)
+- [Shutterstock](https://miniurl.com/ShutStockExplore)
+
+### Acknowledgements
+
+- I would like to thank my mentor, Oluwafemi Medale for all of his support throughout this project. Femi was extremely encouraging and gave me the confidence to get this project finished.
+- I would like to thank the Code Institute Slack community for being there to answer any of my questions or just provide a supportive ear.
+- I would like to that the Code Institute tutor support team as they were extremely helpful throughout this project and supported me in something that was so new.
+- Finally, I would like to thank my wife Ciana. Her support throughout this project has been what has kept me going. 
 
 
 [Back to Table of Contents](#table-of-contents)
