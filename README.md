@@ -347,26 +347,25 @@ In a future version of this quiz I would like to implement a user score table wh
 
 ### index.html
 
+![index.html validation]()
 
 ## CSS Validation
 
+![style.css validation]()
 
 ## JS Validation
 
 ### script.js
 
-
-### escape.js
-
+![script.js validation]()
 
 ## Lighthouse 
 
+### Mobile
+![mobile](assets/documentation/lighthouse/lighthouse-mobile.png)
 
 ### Desktop
-
-
-### Mobile
-
+![desktop](assets/documentation/lighthouse/lighthouse-desktop.png)
 
 
 [Back to Table of Contents](#table-of-contents)
